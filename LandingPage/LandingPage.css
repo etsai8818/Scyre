@@ -1,0 +1,2200 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    vertical-align: baseline;
+}
+
+.landNavIndex {
+    position: relative;
+    z-index: 1000;
+}
+
+.landingWrapper {
+    width: 100%;
+    max-width: 1680px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    overflow: hidden;
+}
+
+.firstSlide {
+    display: flex;
+    justify-content: space-between;
+}
+
+.firstSlide-content {
+    margin-top: 250px;
+    margin-left: 50px;
+    /*animation: loadup 0.5s;*/
+}
+
+/*
+@keyframes loadup {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+*/
+
+
+.firstSlide-content h1 {
+    background: -webkit-linear-gradient(left, #F9766E, #FFAE87);
+    background: -o-linear-gradient(right, #F9766E, #FFAE87);
+   background: -moz-linear-gradient(right, #F9766E, #FFAE87);
+   background: linear-gradient(to right, #F9766E , #FFAE87);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 550px;
+    font-size: 50px;
+    z-index: -5;
+}
+
+.firstSlide-content h5 {
+    font-weight: 400;
+    font-size: 13px;
+    color: #6E6E6E;
+}
+
+.loginLinkHome {
+    color: #4285F4;
+    transition: 0.3s;
+}
+
+.loginLinkHome:hover {
+    color: #FE715B;
+}
+
+.firstSlide-content p {
+    color: #6E6E6E;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.firstSlide img {
+    width: 1550px;
+    margin-left: 150px;
+    margin-top: -500px;
+    pointer-events: none;
+    z-index: -5;
+}
+
+.imageV2 {
+    display: none;
+    z-index: -5;
+}
+
+.landingPageButton {
+    background-color: #4285F4;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 1000px;
+    padding:5px;
+    padding-right: 8px;
+    transition: 0.3s;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.buttonHoverText {
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    opacity: 1;
+}
+
+.landingPageButton .buttonHoverText {
+    transition: 0.3s;
+}
+
+.landingPageButton:hover {
+    background-color: #47D16B;
+}
+
+.landingPageButton .button-circle {
+    transition: 0.3s;
+}
+
+.landingPageButton:hover .button-circle {
+    transform: translateX(105px);
+    opacity: 1;
+}
+
+.landingPageButton:hover .buttonHoverText {
+    opacity: 0;
+}
+
+.button-circle {
+    background: #fff;
+    border: none;
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    opacity: 0.65;
+    margin-right: 8px;
+}
+
+.secondSlide {
+    background-image: url(../Images/screenshotBG.png);
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    padding-top: 0;
+    margin-top: -250px;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 800px;
+    z-index: -1;
+}
+
+.secondSlide img {
+    width: 50vw;
+    pointer-events: none;
+}
+
+.discoverCont {
+    width: 550px;
+    margin-left: 50px;
+}
+
+.discoverCont h1 {
+    background: -webkit-linear-gradient(left, #681EF6, #3B76DB);
+    background: -o-linear-gradient(right, #681EF6, #3B76DB);
+    background: -moz-linear-gradient(right, #681EF6, #3B76DB);
+    background: linear-gradient(to right, #681EF6 , #3B76DB);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 45px;
+    z-index: 2;
+}
+
+.discoverCont p {
+    color: #6E6E6E;
+    font-size: 20px;
+    font-weight: 300;
+    padding-top: 25px;
+}
+
+.thirdSlide {
+    background-image: url(../Images/profileBG.png);
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    padding-top: 0;
+    margin-top: 0px;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 900px;
+    position: relative;
+    z-index: -6;
+}
+
+.thirdSlide img {
+    width: 50vw;
+    margin-left: -10px;
+    pointer-events: none;
+}
+
+.build-cont {
+    width: 600px;
+    margin-right: 50px;
+}
+
+.build-cont h1 {
+    background: -webkit-linear-gradient(left, #681EF6, #4285F4);
+    background: -o-linear-gradient(right, #681EF6, #4285F4);
+    background: -moz-linear-gradient(right, #681EF6, #4285F4);
+    background: linear-gradient(to right, #681EF6 , #4285F4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 45px;
+}
+
+.profileTypes {
+    padding-top: 70px;
+}
+
+.profileName {
+    display: flex;
+    align-items: center;
+}
+
+.profileName img {
+    width: 30px;
+    pointer-events: none;
+}
+
+.profileName h2 {
+    color: #626262;
+    font-size: 30px;
+    font-weight: 700;
+    padding-left: 15px;
+    margin-top: 0px;
+}
+
+.profileDescription {
+    padding-bottom: 70px;
+}
+
+.profileDescription p {
+    color: #6E6E6E;
+    font-size: 20px;
+    font-weight: 300;
+    padding-top: 15px;
+}
+
+.fourthSlide {
+    background: #fff;
+    top: 0;
+    padding-top: 0;
+    margin-top: 0px;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 800px;
+    position: relative;
+    z-index: -6;
+}
+
+.fourthSlide img {
+    width: 50vw;
+    pointer-events: none;
+}
+
+.diagramV1 {
+    display: none;
+}
+
+.feature-cont {
+    width: 580px;
+    margin-left: 50px;
+}
+
+.featureDesc {
+    padding-bottom: 55px;
+}
+
+.featureDesc h2 {
+    color: #FE6E59;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.featureDesc p {
+    color: #6E6E6E;
+    font-size: 20px;
+    font-weight: 300;
+    padding-top: 15px;
+}
+
+.fifthSlide {
+    background-image: url(../Images/stay-connected.png);
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    padding-top: 0;
+    margin-top: 0px;
+    overflow-x: hidden;
+    width: 100%;
+    height: 250px;
+    text-align: center;
+}
+
+.fifthSlide h1 {
+    background: -webkit-linear-gradient(left, #681EF6, #4285F4);
+    background: -o-linear-gradient(right, #681EF6, #4285F4);
+    background: -moz-linear-gradient(right, #681EF6, #4285F4);
+    background: linear-gradient(to right, #681EF6 , #4285F4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    padding-top: 50px;
+    
+}
+
+.tryFree {
+    background-image: linear-gradient(to right, #F85159 0%, #F88959 100%);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 1;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.tryFree:hover {
+    color: #fff;
+    opacity: .85;
+}
+
+.page-footer {
+    background: #FCFCFC;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+}
+
+.page-footer h6 {
+    color: #747474;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.page-footer a {
+    color: #747474;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/****************** Media Queries ******************/
+
+@media only screen and (max-width: 1600px) { 
+    .firstSlide img {
+        width: 1300px;
+        margin-left: 0px;
+        margin-top: -350px;
+    }
+    .profileDescription {
+        padding-bottom: 40px;
+    }
+    .build-cont {
+        width: 500px;
+        margin-right: 50px;
+    }
+ }
+
+ @media only screen and (max-width: 1280px) {
+    
+    .firstSlide-content {
+        margin-top: 250px;
+        margin-left: 40px;
+    }
+    
+    .firstSlide-content h1 {
+        background: -webkit-linear-gradient(left, #F9766E, #FFAE87);
+        background: -o-linear-gradient(right, #F9766E, #FFAE87);
+       background: -moz-linear-gradient(right, #F9766E, #FFAE87);
+       background: linear-gradient(to right, #F9766E , #FFAE87);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: 450px;
+        font-size: 40px;
+    }
+    
+    .firstSlide img {
+        width: 1200px;
+        margin-left: -50px;
+        margin-top: -300px;
+    }
+
+    .secondSlide {
+        background-image: url(../Images/screenshotBG.png);
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        padding-top: 0;
+        margin-top: -185px;
+        overflow-x: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 600px;
+    }
+    
+    .secondSlide img {
+        width: 50vw;
+        pointer-events: none;
+    }
+    
+    .discoverCont {
+        width: 500px;
+        margin-left: 40px;
+    }
+    
+    .discoverCont h1 {
+        background: -webkit-linear-gradient(left, #681EF6, #3B76DB);
+        background: -o-linear-gradient(right, #681EF6, #3B76DB);
+        background: -moz-linear-gradient(right, #681EF6, #3B76DB);
+        background: linear-gradient(to right, #681EF6 , #3B76DB);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 40px;
+    }
+    
+    .discoverCont p {
+        color: #6E6E6E;
+        font-size: 19px;
+        font-weight: 300;
+        padding-top: 25px;
+    }
+    
+    
+    .thirdSlide {
+        background-image: url(../Images/profileBG.png);
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        padding-top: 0;
+        margin-top: 0px;
+        overflow-x: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 800px;
+    }
+    
+    .thirdSlide img {
+        width: 50vw;
+        margin-left: -10px;
+        pointer-events: none;
+    }
+
+    .build-cont {
+        margin-right: 40px;
+    }
+    
+    .build-cont h1 {
+        background: -webkit-linear-gradient(left, #681EF6, #4285F4);
+        background: -o-linear-gradient(right, #681EF6, #4285F4);
+        background: -moz-linear-gradient(right, #681EF6, #4285F4);
+        background: linear-gradient(to right, #681EF6 , #4285F4);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 40px;
+    }
+    
+    .profileTypes {
+        padding-top: 40px;
+    }
+    
+    .profileName {
+        display: flex;
+        align-items: center;
+    }
+    
+    .profileName img {
+        width: 27px;
+        pointer-events: none;
+    }
+    
+    .profileName h2 {
+        color: #626262;
+        font-size: 27px;
+        font-weight: 700;
+        padding-left: 15px;
+        margin-top: 0px;
+    }
+    
+    .profileDescription {
+        padding-bottom: 40px;
+    }
+    
+    .profileDescription p {
+        color: #6E6E6E;
+        font-size: 19px;
+        font-weight: 300;
+        padding-top: 15px;
+    }
+
+    .fourthSlide {
+        background: #fff;
+        top: 0;
+        padding-top: 0;
+        margin-top: 0px;
+        overflow-x: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 800px;
+    }
+    
+    .fourthSlide img {
+        width: 50vw;
+        pointer-events: none;
+    }
+    
+    .feature-cont {
+        width: 520px;
+        margin-left: 40px;
+    }
+    
+    .featureDesc {
+        padding-bottom: 55px;
+    }
+    
+    .featureDesc h2 {
+        color: #FE6E59;
+        font-size: 27px;
+        font-weight: 700;
+    }
+    
+    .featureDesc p {
+        color: #6E6E6E;
+        font-size: 19px;
+        font-weight: 300;
+        padding-top: 10px;
+    }
+
+    .fifthSlide {
+        background-image: url(../Images/stay-connected.png);
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        padding-top: 0;
+        margin-top: 0px;
+        overflow-x: hidden;
+        width: 100%;
+        height: 200px;
+        text-align: center;
+    }
+    
+    .fifthSlide h1 {
+        background: -webkit-linear-gradient(left, #681EF6, #4285F4);
+        background: -o-linear-gradient(right, #681EF6, #4285F4);
+        background: -moz-linear-gradient(right, #681EF6, #4285F4);
+        background: linear-gradient(to right, #681EF6 , #4285F4);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 40px;
+        padding-top: 40px;
+        
+    }
+
+    .tryFree {
+        background-image: linear-gradient(to right, #F85159 0%, #F88959 100%);
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        width: 175px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3s;
+        opacity: 1;
+        font-size: 19px;
+        font-weight: 600;
+    }
+    
+ }
+
+ @media only screen and (max-width: 1112px) {
+    .firstSlide {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .firstSlide-content {
+        margin-top: 250px;
+        margin-left: 30px;
+        /*animation: loadup 0.5s;*/
+    }
+    
+    .firstSlide-content h1 {
+        background: -webkit-linear-gradient(left, #F9766E, #FFAE87);
+        background: -o-linear-gradient(right, #F9766E, #FFAE87);
+       background: -moz-linear-gradient(right, #F9766E, #FFAE87);
+       background: linear-gradient(to right, #F9766E , #FFAE87);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: 400px;
+        font-size: 35px;
+    }
+    
+    .firstSlide-content h5 {
+        font-weight: 400;
+        font-size: 13px;
+        color: #6E6E6E;
+    }
+    
+    .loginLinkHome {
+        color: #4285F4;
+        transition: 0.3s;
+    }
+    
+    .loginLinkHome:hover {
+        color: #FE715B;
+    }
+    
+    .firstSlide-content p {
+        color: #6E6E6E;
+        font-size: 17px;
+        font-weight: 300;
+    }
+    
+    .firstSlide img {
+        width: 1100px;
+        margin-left: -55px;
+        margin-top: -300px;
+    }
+    
+    .landingPageButton {
+        background-color: #4285F4;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        border: none;
+        border-radius: 1000px;
+        padding:5px;
+        padding-right: 8px;
+        transition: 0.3s;
+        font-weight: 700;
+        font-size: 13px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+    
+    .buttonHoverText {
+        font-weight: 700;
+        font-size: 13px;
+        letter-spacing: 1px;
+        opacity: 1;
+    }
+    
+    .landingPageButton .buttonHoverText {
+        transition: 0.3s;
+    }
+    
+    .landingPageButton:hover {
+        background-color: #47D16B;
+    }
+    
+    .landingPageButton .button-circle {
+        transition: 0.3s;
+    }
+    
+    .landingPageButton:hover .button-circle {
+        transform: translateX(105px);
+        opacity: 1;
+    }
+    
+    .landingPageButton:hover .buttonHoverText {
+        opacity: 0;
+    }
+    
+    .button-circle {
+        background: #fff;
+        border: none;
+        border-radius: 50px;
+        height: 30px;
+        width: 30px;
+        opacity: 0.65;
+        margin-right: 8px;
+    }
+
+    .secondSlide {
+        background-image: url(../Images/screenshotBG.png);
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        padding-top: 0;
+        margin-top: -90px;
+        overflow-x: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 500px;
+    }
+    
+    .secondSlide img {
+        width: 50vw;
+        pointer-events: none;
+    }
+    
+    .discoverCont {
+        width: 450px;
+        margin-left: 30px;
+    }
+    
+    .discoverCont h1 {
+        background: -webkit-linear-gradient(left, #681EF6, #3B76DB);
+        background: -o-linear-gradient(right, #681EF6, #3B76DB);
+        background: -moz-linear-gradient(right, #681EF6, #3B76DB);
+        background: linear-gradient(to right, #681EF6 , #3B76DB);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 35px;
+    }
+    
+    .discoverCont p {
+        color: #6E6E6E;
+        font-size: 17px;
+        font-weight: 300;
+        padding-top: 25px;
+    }
+    .thirdSlide {
+        background-image: url(../Images/profileBG.png);
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        padding-top: 0;
+        margin-top: 0px;
+        overflow-x: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 700px;
+    }
+
+    .build-cont {
+        width: 450px;
+        margin-right: 30px;
+    }
+    
+    .build-cont h1 {
+        background: -webkit-linear-gradient(left, #681EF6, #4285F4);
+        background: -o-linear-gradient(right, #681EF6, #4285F4);
+        background: -moz-linear-gradient(right, #681EF6, #4285F4);
+        background: linear-gradient(to right, #681EF6 , #4285F4);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 35px;
+    }
+    
+    .profileTypes {
+        padding-top: 40px;
+    }
+    
+    .profileName {
+        display: flex;
+        align-items: center;
+    }
+    
+    .profileName img {
+        width: 23px;
+        pointer-events: none;
+    }
+    
+    .profileName h2 {
+        color: #626262;
+        font-size: 23px;
+        font-weight: 700;
+        padding-left: 15px;
+        margin-top: 0px;
+    }
+    
+    .profileDescription {
+        padding-bottom: 40px;
+    }
+    
+    .profileDescription p {
+        color: #6E6E6E;
+        font-size: 17px;
+        font-weight: 300;
+        padding-top: 15px;
+    }
+
+    .fourthSlide {
+        background: #fff;
+        top: 0;
+        padding-top: 0;
+        margin-top: 0px;
+        overflow-x: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 600px;
+    }
+    
+    .fourthSlide img {
+        width: 50vw;
+        pointer-events: none;
+    }
+    
+    .feature-cont {
+        width: 470px;
+        margin-left: 30px;
+    }
+    
+    .featureDesc {
+        padding-bottom: 55px;
+    }
+    
+    .featureDesc h2 {
+        color: #FE6E59;
+        font-size: 22px;
+        font-weight: 700;
+    }
+    
+    .featureDesc p {
+        color: #6E6E6E;
+        font-size: 17px;
+        font-weight: 300;
+        padding-top: 10px;
+    }
+
+    .fifthSlide {
+        background-image: url(../Images/stay-connected.png);
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        padding-top: 0;
+        margin-top: 0px;
+        overflow-x: hidden;
+        width: 100%;
+        height: 200px;
+        text-align: center;
+    }
+    
+    .fifthSlide h1 {
+        background: -webkit-linear-gradient(left, #681EF6, #4285F4);
+        background: -o-linear-gradient(right, #681EF6, #4285F4);
+        background: -moz-linear-gradient(right, #681EF6, #4285F4);
+        background: linear-gradient(to right, #681EF6 , #4285F4);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 35px;
+        padding-top: 40px;
+        
+    }
+
+    .tryFree {
+        background-image: linear-gradient(to right, #F85159 0%, #F88959 100%);
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        width: 175px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3s;
+        opacity: 1;
+        font-size: 17px;
+        font-weight: 600;
+    }
+ }
+
+ @media only screen and (max-width: 839px) {
+    .firstSlide {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .firstSlide-content {
+        margin-top: 250px;
+        margin-left: 30px;
+        /*animation: loadup 0.5s;*/
+    }
+    
+    .firstSlide-content h1 {
+        background: -webkit-linear-gradient(left, #F9766E, #FFAE87);
+        background: -o-linear-gradient(right, #F9766E, #FFAE87);
+       background: -moz-linear-gradient(right, #F9766E, #FFAE87);
+       background: linear-gradient(to right, #F9766E , #FFAE87);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: 350px;
+        font-size: 30px;
+    }
+    
+    .firstSlide-content h5 {
+        font-weight: 400;
+        font-size: 13px;
+        color: #6E6E6E;
+    }
+    
+    .loginLinkHome {
+        color: #4285F4;
+        transition: 0.3s;
+    }
+    
+    .loginLinkHome:hover {
+        color: #FE715B;
+    }
+    
+    .firstSlide-content p {
+        color: #6E6E6E;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    
+    .firstSlide img {
+        width: 1000px;
+        margin-left: -100px;
+        margin-top: -300px;
+    }
+    
+    .landingPageButton {
+        background-color: #4285F4;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        border: none;
+        border-radius: 1000px;
+        padding:5px;
+        padding-right: 8px;
+        transition: 0.3s;
+        font-weight: 700;
+        font-size: 13px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+    
+    .buttonHoverText {
+        font-weight: 700;
+        font-size: 13px;
+        letter-spacing: 1px;
+        opacity: 1;
+    }
+    
+    .landingPageButton .buttonHoverText {
+        transition: 0.3s;
+    }
+    
+    .landingPageButton:hover {
+        background-color: #47D16B;
+    }
+    
+    .landingPageButton .button-circle {
+        transition: 0.3s;
+    }
+    
+    .landingPageButton:hover .button-circle {
+        transform: translateX(105px);
+        opacity: 1;
+    }
+    
+    .landingPageButton:hover .buttonHoverText {
+        opacity: 0;
+    }
+    
+    .button-circle {
+        background: #fff;
+        border: none;
+        border-radius: 50px;
+        height: 30px;
+        width: 30px;
+        opacity: 0.65;
+        margin-right: 8px;
+    }
+
+    .secondSlide {
+        background-image: url(../Images/screenshotBG.png);
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        padding-top: 0;
+        margin-top: -90px;
+        overflow-x: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 450px;
+    }
+    
+    .secondSlide img {
+        width: 50vw;
+        pointer-events: none;
+    }
+    
+    .discoverCont {
+        width: 450px;
+        margin-left: 30px;
+    }
+    
+    .discoverCont h1 {
+        background: -webkit-linear-gradient(left, #681EF6, #3B76DB);
+        background: -o-linear-gradient(right, #681EF6, #3B76DB);
+        background: -moz-linear-gradient(right, #681EF6, #3B76DB);
+        background: linear-gradient(to right, #681EF6 , #3B76DB);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 30px;
+    }
+    
+    .discoverCont p {
+        color: #6E6E6E;
+        font-size: 15px;
+        font-weight: 300;
+        padding-top: 25px;
+    }
+    .thirdSlide {
+        background-image: url(../Images/profileBG.png);
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        padding-top: 0;
+        margin-top: 0px;
+        overflow-x: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 600px;
+    }
+
+    .build-cont {
+        width: 450px;
+        margin-right: 30px;
+    }
+    
+    .build-cont h1 {
+        background: -webkit-linear-gradient(left, #681EF6, #4285F4);
+        background: -o-linear-gradient(right, #681EF6, #4285F4);
+        background: -moz-linear-gradient(right, #681EF6, #4285F4);
+        background: linear-gradient(to right, #681EF6 , #4285F4);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 30px;
+    }
+    
+    .profileTypes {
+        padding-top: 40px;
+    }
+    
+    .profileName {
+        display: flex;
+        align-items: center;
+    }
+    
+    .profileName img {
+        width: 20px;
+        pointer-events: none;
+    }
+    
+    .profileName h2 {
+        color: #626262;
+        font-size: 20px;
+        font-weight: 700;
+        padding-left: 15px;
+        margin-top: 0px;
+    }
+    
+    .profileDescription {
+        padding-bottom: 30px;
+    }
+    
+    .profileDescription p {
+        color: #6E6E6E;
+        font-size: 15px;
+        font-weight: 300;
+        padding-top: 15px;
+    }
+
+    .fourthSlide {
+        background: #fff;
+        top: 0;
+        padding-top: 0;
+        margin-top: 0px;
+        overflow-x: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 500px;
+    }
+    
+    .fourthSlide img {
+        width: 50vw;
+        pointer-events: none;
+    }
+    
+    .feature-cont {
+        width: 470px;
+        margin-left: 30px;
+    }
+    
+    .featureDesc {
+        padding-bottom: 30px;
+    }
+    
+    .featureDesc h2 {
+        color: #FE6E59;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    .featureDesc p {
+        color: #6E6E6E;
+        font-size: 15px;
+        font-weight: 300;
+        padding-top: 5px;
+    }
+
+    .fifthSlide {
+        background-image: url(../Images/stay-connected.png);
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        padding-top: 0;
+        margin-top: 0px;
+        overflow-x: hidden;
+        width: 100%;
+        height: 200px;
+        text-align: center;
+    }
+    
+    .fifthSlide h1 {
+        background: -webkit-linear-gradient(left, #681EF6, #4285F4);
+        background: -o-linear-gradient(right, #681EF6, #4285F4);
+        background: -moz-linear-gradient(right, #681EF6, #4285F4);
+        background: linear-gradient(to right, #681EF6 , #4285F4);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 30px;
+        padding-top: 40px;
+        
+    }
+
+    .tryFree {
+        background-image: linear-gradient(to right, #F85159 0%, #F88959 100%);
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        width: 175px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3s;
+        opacity: 1;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .page-footer {
+        background: #FCFCFC;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 30px;
+    }
+    
+    .page-footer h6 {
+        color: #747474;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    
+    .page-footer a {
+        color: #747474;
+        font-size: 13px;
+        font-weight: 400;
+    }
+ }
+
+
+ /************************* MOBILE ************************/
+
+ @media only screen and (max-width: 768px) {
+    .firstSlide {
+        display: block;
+    }
+    
+    .firstSlide-content {
+        margin-top: 150px;
+        margin-left: 50px;
+        width: 500px;
+        /*animation: loadup 0.5s;*/
+    }
+    
+    /*
+    @keyframes loadup {
+        0% {
+            transform: translateY(30px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+    */
+    
+    
+    .firstSlide-content h1 {
+        background: -webkit-linear-gradient(left, #F9766E, #FFAE87);
+        background: -o-linear-gradient(right, #F9766E, #FFAE87);
+       background: -moz-linear-gradient(right, #F9766E, #FFAE87);
+       background: linear-gradient(to right, #F9766E , #FFAE87);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: 500px;
+        font-size: 35px;
+    }
+    
+    .firstSlide-content h5 {
+        font-weight: 400;
+        font-size: 12px;
+        color: #6E6E6E;
+    }
+    
+    .loginLinkHome {
+        color: #4285F4;
+        transition: 0.3s;
+    }
+    
+    .loginLinkHome:hover {
+        color: #FE715B;
+    }
+    
+    .firstSlide-content p {
+        color: #6E6E6E;
+        font-size: 18px;
+        font-weight: 300;
+    }
+    
+    .firstSlide img {
+        width: 1200px;
+        margin-left: 50px;
+        margin-top: -200px;
+        pointer-events: none;
+    }
+
+    .imageV1 {
+        display: none;
+    }
+    
+    .imageV2 {
+        display: block;
+    }
+    
+    .landingPageButton {
+        background-color: #4285F4;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        border: none;
+        border-radius: 1000px;
+        padding:5px;
+        padding-right: 8px;
+        transition: 0.3s;
+        font-weight: 700;
+        letter-spacing: 1px;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+    
+    .buttonHoverText {
+        font-weight: 700;
+        font-size: 12px;
+        letter-spacing: 1px;
+        opacity: 1;
+    }
+    
+    .landingPageButton .buttonHoverText {
+        transition: 0.3s;
+    }
+    
+    .landingPageButton:hover {
+        background-color: #47D16B;
+    }
+    
+    .landingPageButton .button-circle {
+        transition: 0.3s;
+    }
+    
+    .landingPageButton:hover .button-circle {
+        transform: translateX(99px);
+        opacity: 1;
+    }
+    
+    .landingPageButton:hover .buttonHoverText {
+        opacity: 0;
+    }
+    
+    .button-circle {
+        background: #fff;
+        border: none;
+        border-radius: 50px;
+        height: 30px;
+        width: 30px;
+        opacity: 0.65;
+        margin-right: 8px;
+    }
+    
+    .secondSlide {
+        background-image: url(../Images/screenshotBG.png);
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        padding-top: 0;
+        margin-top: -200px;
+        overflow-x: hidden;
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: 800px;
+    }
+    
+    .secondSlide img {
+        width: 90vw;
+        pointer-events: none;
+    }
+    
+    .discoverCont {
+        width: 550px;
+        margin: auto;
+        display: inline-block;
+    }
+    
+    .discoverCont h1 {
+        background: -webkit-linear-gradient(left, #681EF6, #3B76DB);
+        background: -o-linear-gradient(right, #681EF6, #3B76DB);
+        background: -moz-linear-gradient(right, #681EF6, #3B76DB);
+        background: linear-gradient(to right, #681EF6 , #3B76DB);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 35px;
+    }
+    
+    .discoverCont p {
+        color: #6E6E6E;
+        font-size: 18px;
+        font-weight: 300;
+        padding-top: 25px;
+    }
+    
+    .thirdSlide {
+        background-image: url(../Images/profileBG.png);
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        padding-top: 0;
+        margin-top: 0px;
+        overflow-x: hidden;
+        display: block;
+        width: 100%;
+        height: 1300px;
+    }
+    
+    .thirdSlide img {
+        width: 90vw;
+        margin-left: -10px;
+        pointer-events: none;
+    }
+    
+    .build-cont {
+        width: 600px;
+        margin-left: 50px;
+        padding-top: 50px;
+    }
+    
+    .build-cont h1 {
+        background: -webkit-linear-gradient(left, #681EF6, #4285F4);
+        background: -o-linear-gradient(right, #681EF6, #4285F4);
+        background: -moz-linear-gradient(right, #681EF6, #4285F4);
+        background: linear-gradient(to right, #681EF6 , #4285F4);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 35px;
+    }
+    
+    .profileTypes {
+        padding-top: 40px;
+    }
+    
+    .profileName {
+        display: flex;
+        align-items: center;
+    }
+    
+    .profileName img {
+        width: 25px;
+        pointer-events: none;
+    }
+    
+    .profileName h2 {
+        color: #626262;
+        font-size: 25px;
+        font-weight: 700;
+        padding-left: 15px;
+        margin-top: 0px;
+    }
+    
+    .profileDescription {
+        padding-bottom: 40px;
+    }
+    
+    .profileDescription p {
+        color: #6E6E6E;
+        font-size: 18px;
+        font-weight: 300;
+        padding-top: 15px;
+    }
+    
+    .fourthSlide {
+        background: #fff;
+        top: 0;
+        padding-top: 0;
+        margin-top: 0px;
+        overflow-x: hidden;
+        display: block;
+        width: 100%;
+        height: 1050px;
+    }
+    
+    .fourthSlide img {
+        width: 90vw;
+        pointer-events: none;
+    }
+
+    .diagramV1 {
+        display: block;
+        margin: auto;
+    }
+
+    .diagramV2 {
+        display: none;
+    }
+    
+    .feature-cont {
+        width: 580px;
+        margin-left: 50px;
+        padding-top: 80px;
+    }
+    
+    .featureDesc {
+        padding-bottom: 40px;
+    }
+    
+    .featureDesc h2 {
+        color: #FE6E59;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    
+    .featureDesc p {
+        color: #6E6E6E;
+        font-size: 18px;
+        font-weight: 300;
+        padding-top: 5px;
+    }
+    
+    .fifthSlide {
+        background-image: url(../Images/stay-connected.png);
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        padding-top: 0;
+        margin-top: 0px;
+        overflow-x: hidden;
+        width: 100%;
+        height: 250px;
+        text-align: center;
+    }
+    
+    .fifthSlide h1 {
+        background: -webkit-linear-gradient(left, #681EF6, #4285F4);
+        background: -o-linear-gradient(right, #681EF6, #4285F4);
+        background: -moz-linear-gradient(right, #681EF6, #4285F4);
+        background: linear-gradient(to right, #681EF6 , #4285F4);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 35px;
+        padding-top: 50px;
+        
+    }
+    
+    .tryFree {
+        background-image: linear-gradient(to right, #F85159 0%, #F88959 100%);
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        width: 200px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3s;
+        opacity: 1;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .tryFree:hover {
+        color: #fff;
+        opacity: .85;
+    }
+    
+    .page-footer {
+        background: #FCFCFC;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 30px;
+    }
+    
+    .page-footer h6 {
+        color: #747474;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    
+    .page-footer a {
+        color: #747474;
+        font-size: 13px;
+        font-weight: 400;
+    }
+ }
+
+
+ /************************* MOBILE ************************/
+
+ @media only screen and (max-width: 680px) {
+    .firstSlide {
+        display: block;
+    }
+    
+    .firstSlide-content {
+        margin-top: 80px;
+        margin-left: 27px;
+        width: 400px;
+        /*animation: loadup 0.5s;*/
+    }
+    
+    /*
+    @keyframes loadup {
+        0% {
+            transform: translateY(30px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+    */
+    
+    
+    .firstSlide-content h1 {
+        background: -webkit-linear-gradient(left, #F9766E, #FFAE87);
+        background: -o-linear-gradient(right, #F9766E, #FFAE87);
+       background: -moz-linear-gradient(right, #F9766E, #FFAE87);
+       background: linear-gradient(to right, #F9766E , #FFAE87);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: 400px;
+        font-size: 27px;
+    }
+    
+    .firstSlide-content h5 {
+        font-weight: 400;
+        font-size: 12px;
+        color: #6E6E6E;
+    }
+    
+    .loginLinkHome {
+        color: #4285F4;
+        transition: 0.3s;
+    }
+    
+    .loginLinkHome:hover {
+        color: #FE715B;
+    }
+    
+    .firstSlide-content p {
+        color: #6E6E6E;
+        font-size: 16px;
+        font-weight: 300;
+    }
+    
+    .firstSlide img {
+        width: 1000px;
+        margin-left: 50px;
+        margin-top: -200px;
+        pointer-events: none;
+    }
+
+    .imageV1 {
+        display: none;
+    }
+    
+    .imageV2 {
+        display: block;
+    }
+    
+    .buttonHoverText {
+        font-weight: 700;
+        font-size: 12px;
+        letter-spacing: 1px;
+        opacity: 1;
+    }
+
+    .secondSlide {
+        background-image: url(../Images/screenshotBG.png);
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        padding-top: 0;
+        margin-top: -170px;
+        overflow-x: hidden;
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: 600px;
+    }
+    
+    .secondSlide img {
+        width: 90vw;
+        pointer-events: none;
+    }
+    
+    .discoverCont {
+        width: 70vw;
+        margin: auto;
+        display: inline-block;
+    }
+    
+    .discoverCont h1 {
+        background: -webkit-linear-gradient(left, #681EF6, #3B76DB);
+        background: -o-linear-gradient(right, #681EF6, #3B76DB);
+        background: -moz-linear-gradient(right, #681EF6, #3B76DB);
+        background: linear-gradient(to right, #681EF6 , #3B76DB);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 27px;
+    }
+    
+    .discoverCont p {
+        color: #6E6E6E;
+        font-size: 16px;
+        font-weight: 300;
+        padding-top: 25px;
+    }
+    
+    .thirdSlide {
+        background-image: url(../Images/profileBG.png);
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        padding-top: 0;
+        margin-top: 0px;
+        overflow-x: hidden;
+        display: block;
+        width: 100%;
+        height: 1150px;
+    }
+    
+    .thirdSlide img {
+        width: 90vw;
+        margin-left: -10px;
+        pointer-events: none;
+    }
+    
+    .build-cont {
+        width: 80vw;
+        margin-left: 30px;
+        padding-top: 50px;
+    }
+    
+    .build-cont h1 {
+        background: -webkit-linear-gradient(left, #681EF6, #4285F4);
+        background: -o-linear-gradient(right, #681EF6, #4285F4);
+        background: -moz-linear-gradient(right, #681EF6, #4285F4);
+        background: linear-gradient(to right, #681EF6 , #4285F4);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 27px;
+    }
+    
+    .profileTypes {
+        padding-top: 40px;
+    }
+    
+    .profileName {
+        display: flex;
+        align-items: center;
+    }
+    
+    .profileName img {
+        width: 20px;
+        pointer-events: none;
+    }
+    
+    .profileName h2 {
+        color: #626262;
+        font-size: 20px;
+        font-weight: 700;
+        padding-left: 15px;
+        margin-top: 0px;
+    }
+    
+    .profileDescription {
+        padding-bottom: 40px;
+    }
+    
+    .profileDescription p {
+        color: #6E6E6E;
+        font-size: 16px;
+        font-weight: 300;
+        padding-top: 15px;
+    }
+    
+    .fourthSlide {
+        background: #fff;
+        top: 0;
+        padding-top: 0;
+        margin-top: 0px;
+        overflow-x: hidden;
+        display: block;
+        width: 100%;
+        height: 950px;
+    }
+    
+    .fourthSlide img {
+        width: 90vw;
+        pointer-events: none;
+    }
+
+    .diagramV1 {
+        display: block;
+        margin: auto;
+    }
+
+    .diagramV2 {
+        display: none;
+    }
+    
+    .feature-cont {
+        width: 80vw;
+        margin-left: 27px;
+        padding-top: 80px;
+    }
+    
+    .featureDesc {
+        padding-bottom: 40px;
+    }
+    
+    .featureDesc h2 {
+        color: #FE6E59;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    .featureDesc p {
+        color: #6E6E6E;
+        font-size: 16px;
+        font-weight: 300;
+        padding-top: 0px;
+    }
+    
+    .fifthSlide {
+        background-image: url(../Images/stay-connected.png);
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        padding-top: 0;
+        margin-top: 0px;
+        overflow-x: hidden;
+        width: 100%;
+        height: 250px;
+        text-align: center;
+    }
+    
+    .fifthSlide h1 {
+        background: -webkit-linear-gradient(left, #681EF6, #4285F4);
+        background: -o-linear-gradient(right, #681EF6, #4285F4);
+        background: -moz-linear-gradient(right, #681EF6, #4285F4);
+        background: linear-gradient(to right, #681EF6 , #4285F4);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 27px;
+        padding-top: 40px;
+        
+    }
+    
+    .tryFree {
+        background-image: linear-gradient(to right, #F85159 0%, #F88959 100%);
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        width: 200px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3s;
+        opacity: 1;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
+    .tryFree:hover {
+        color: #fff;
+        opacity: .85;
+    }
+    
+    .page-footer {
+        background: #FCFCFC;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 30px;
+    }
+    
+    .page-footer h6 {
+        color: #747474;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    
+    .page-footer a {
+        color: #747474;
+        font-size: 13px;
+        font-weight: 400;
+    }
+ }
+
+ @media only screen and (max-width: 500px) {
+    
+    .firstSlide-content {
+        margin-top: 80px;
+        margin-left: 27px;
+        width: 300px;
+        /*animation: loadup 0.5s;*/
+    }
+    
+    /*
+    @keyframes loadup {
+        0% {
+            transform: translateY(30px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+    */
+    
+    
+    .firstSlide-content h1 {
+        background: -webkit-linear-gradient(left, #F9766E, #FFAE87);
+        background: -o-linear-gradient(right, #F9766E, #FFAE87);
+       background: -moz-linear-gradient(right, #F9766E, #FFAE87);
+       background: linear-gradient(to right, #F9766E , #FFAE87);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: 275px;
+        font-size: 25px;
+    }
+    
+    .firstSlide-content h5 {
+        font-weight: 400;
+        font-size: 12px;
+        color: #6E6E6E;
+    }
+    
+    .loginLinkHome {
+        color: #4285F4;
+        transition: 0.3s;
+    }
+    
+    .loginLinkHome:hover {
+        color: #FE715B;
+    }
+    
+    .firstSlide-content p {
+        color: #6E6E6E;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    
+    .firstSlide img {
+        width: 850px;
+        margin-left: -50px;
+        margin-top: -160px;
+        pointer-events: none;
+    }
+
+    .imageV1 {
+        display: none;
+    }
+    
+    .imageV2 {
+        display: block;
+    }
+    
+    .buttonHoverText {
+        font-weight: 700;
+        font-size: 12px;
+        letter-spacing: 1px;
+        opacity: 1;
+    }
+
+    .secondSlide {
+        background-image: url(../Images/screenshotBG.png);
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        padding-top: 0;
+        margin-top: 0px;
+        overflow-x: hidden;
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: 550px;
+        z-index: -10;
+        position: relative;
+    }
+    
+    .secondSlide img {
+        width: 98vw;
+        pointer-events: none;
+    }
+    
+    .discoverCont {
+        width: 80vw;
+        margin: auto;
+        display: inline-block;
+    }
+    
+    .discoverCont h1 {
+        background: -webkit-linear-gradient(left, #681EF6, #3B76DB);
+        background: -o-linear-gradient(right, #681EF6, #3B76DB);
+        background: -moz-linear-gradient(right, #681EF6, #3B76DB);
+        background: linear-gradient(to right, #681EF6 , #3B76DB);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 25px;
+    }
+    
+    .discoverCont p {
+        color: #6E6E6E;
+        font-size: 16px;
+        font-weight: 300;
+        padding-top: 5px;
+    }
+    
+    .thirdSlide {
+        background-image: url(../Images/profileBG.png);
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        padding-top: 0;
+        margin-top: 0px;
+        overflow-x: hidden;
+        display: block;
+        width: 100%;
+        height: 1050px;
+    }
+    
+    .thirdSlide img {
+        width: 90vw;
+        margin-left: -10px;
+        pointer-events: none;
+    }
+    
+    .build-cont {
+        width: 80vw;
+        margin-left: 30px;
+        padding-top: 50px;
+    }
+    
+    .build-cont h1 {
+        background: -webkit-linear-gradient(left, #681EF6, #4285F4);
+        background: -o-linear-gradient(right, #681EF6, #4285F4);
+        background: -moz-linear-gradient(right, #681EF6, #4285F4);
+        background: linear-gradient(to right, #681EF6 , #4285F4);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 25px;
+    }
+    
+    .profileTypes {
+        padding-top: 40px;
+    }
+    
+    .profileName {
+        display: flex;
+        align-items: center;
+    }
+    
+    .profileName img {
+        width: 18px;
+        pointer-events: none;
+    }
+    
+    .profileName h2 {
+        color: #626262;
+        font-size: 18px;
+        font-weight: 700;
+        padding-left: 15px;
+        margin-top: 0px;
+    }
+    
+    .profileDescription {
+        padding-bottom: 40px;
+    }
+    
+    .profileDescription p {
+        color: #6E6E6E;
+        font-size: 15px;
+        font-weight: 300;
+        padding-top: 15px;
+    }
+    
+    .fourthSlide {
+        background: #fff;
+        top: 0;
+        padding-top: 0;
+        margin-top: 0px;
+        overflow-x: hidden;
+        display: block;
+        width: 100%;
+        height: 950px;
+    }
+    
+    .fourthSlide img {
+        width: 90vw;
+        pointer-events: none;
+    }
+
+    .diagramV1 {
+        display: block;
+        margin: auto;
+    }
+
+    .diagramV2 {
+        display: none;
+    }
+    
+    .feature-cont {
+        width: 80vw;
+        margin-left: 27px;
+        padding-top: 80px;
+    }
+    
+    .featureDesc {
+        padding-bottom: 40px;
+    }
+    
+    .featureDesc h2 {
+        color: #FE6E59;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .featureDesc p {
+        color: #6E6E6E;
+        font-size: 16px;
+        font-weight: 300;
+        padding-top: 0px;
+    }
+    
+    .fifthSlide {
+        background-image: url(../Images/stay-connected.png);
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        padding-top: 0;
+        margin-top: 0px;
+        overflow-x: hidden;
+        width: 100%;
+        height: 250px;
+        text-align: center;
+    }
+    
+    .fifthSlide h1 {
+        background: -webkit-linear-gradient(left, #681EF6, #4285F4);
+        background: -o-linear-gradient(right, #681EF6, #4285F4);
+        background: -moz-linear-gradient(right, #681EF6, #4285F4);
+        background: linear-gradient(to right, #681EF6 , #4285F4);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 25px;
+        padding-top: 40px;
+        
+    }
+    
+    .tryFree {
+        background-image: linear-gradient(to right, #F85159 0%, #F88959 100%);
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        width: 200px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3s;
+        opacity: 1;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
+    .tryFree:hover {
+        color: #fff;
+        opacity: .85;
+    }
+    
+    .page-footer {
+        background: #FCFCFC;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+    }
+    
+    .page-footer h6 {
+        color: #747474;
+        font-size: 10px;
+        font-weight: 400;
+    }
+    
+    .page-footer a {
+        color: #747474;
+        font-size: 10px;
+        font-weight: 400;
+    }
+ }

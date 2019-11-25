@@ -1,0 +1,566 @@
+@import url("https://use.typekit.net/ndo5vhk.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    vertical-align: baseline;
+}
+
+.landNavIndex {
+    position: relative;
+    z-index: 1000;
+}
+
+.authwrapper {
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+    .pageIconContainer img {
+        pointer-events: none;
+    }
+    
+    .authPageBg {
+        background-image: url(../Images/authBG.png);
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+        background-attachment: fixed;
+    }
+    
+    .centerContainer {
+        max-width: 1800px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        z-index: -1;
+        margin-top: 0;
+        padding-top: 0;
+        margin-bottom: 0;
+    }
+    
+    .scyreLogoAuth {
+        width: 470px;
+        padding-bottom: 30px;
+    }
+    
+    .pageIconContainer img {
+        width: 35px;
+        margin-top: 5px;
+    }
+    
+    form h1 {
+        font-size: 22px;
+        color: #6B6B6B;
+    }
+    
+    .connectWithOthers {
+        font-size: 15px;
+    }
+    .formContent {
+        width: 100%;
+    }
+    
+    .authLabelAndInput {
+        width: 100%;
+        padding-bottom: 10px;
+        display: block;
+    }
+    
+    .totalFundingRaisedAuth {
+        display: grid;
+    }
+    
+    .scyreLogoAuth {
+        display: inline-block;
+        pointer-events: none;
+    }
+    
+    .formContainerForAuth {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 0;
+        margin: 0;
+    }
+    
+    .getStartedForm {
+        text-align: left;
+        height: 365px;
+    }
+    
+    .getStartedForm h2 {
+        color: #6B6B6B;
+        font-size: 25px;
+    }
+    
+    .connectWithOthers {
+        line-height: 20px;
+    }
+    
+    hr {
+        border: 0.5px solid #7E7E7E;
+        opacity: .25;
+    }
+    
+    .centerForm {
+        background: #fff;
+        margin: auto;
+        display: inline-block;
+        -webkit-box-shadow: 0px 0px 35px 1px rgba(0,0,0,0.15);
+        -moz-box-shadow: 0px 0px 35px 1px rgba(0,0,0,0.15);
+        box-shadow: 0px 0px 35px 1px rgba(0,0,0,0.15);
+        padding-left: 21px;
+        padding-right: 21px;
+        padding-top: 23.67px;
+        padding-bottom: 17px;
+        border-radius: 5px;
+        width: 410px;
+    }
+    
+    .formAuthContentPages {
+        width: 100%;
+    }
+    
+    form {
+        background: #fff;
+        margin: auto;
+        display: inline-block;
+        -webkit-box-shadow: 0px 0px 35px 1px rgba(0,0,0,0.15);
+        -moz-box-shadow: 0px 0px 35px 1px rgba(0,0,0,0.15);
+        box-shadow: 0px 0px 35px 1px rgba(0,0,0,0.15);
+        padding-left: 35.65px;
+        padding-right: 35.65px;
+        padding-top: 8px;
+        padding-bottom: 20px;
+        border-radius: 5px;
+        width: 410px;
+    }
+    
+    label {
+        display: flex;
+        font-size: 13px;
+        color: #818181;
+        float: left;
+        padding-bottom: 4px;
+    }
+
+    label h5 {
+        font-size: 13px;
+    }
+    
+    .authLocation {
+        display: flex;
+        width: 100%;
+        font-size: 16px;
+        box-sizing: border-box;
+        outline: none;
+        z-index: 1;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    .authLocation:hover {
+        background: rgba(128,128,128,0.1);
+    }
+    
+    .headerAndParagraph {
+        text-align: left;
+        padding-left: 20px;
+    }
+    
+    .headerAndParagraph h3 {
+        font-size: 15px;
+        color: #6B6B6B;
+    }
+    
+    .headerAndParagraph p {
+        font-size: 13px;
+        color: #818181;
+        margin-top: -8px;
+    }
+    
+    input {
+        display: block;
+        height: 30px;
+        width: 100%;
+        border: 1px solid #afafaf;
+        opacity: .5;
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+        outline: none;
+    }
+    
+    .autoCompleteInputAuthForm {
+        border-bottom: none;
+    }
+    
+    .AutoCompleteText {
+        position: absolute;
+        background: #fff;
+        border: 1px solid rgba(126,126,126,0.3);
+        border-top: none;
+        z-index: 5;
+        width: 337px;
+        max-height: 245px;
+        overflow-y: scroll;
+    }
+    
+    .AutoCompleteText ul {
+        list-style-type: none;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .AutoCompleteText ul::before {
+        content: "";
+    }
+    
+    .AutoCompleteText li {
+        padding: 10px 5px;
+        cursor: pointer;
+        color: #7E7E7E;
+        opacity: 0.8;
+    }
+    
+    .AutoCompleteText li:hover {
+        background: rgba(128,128,128,0.2);
+    }
+    
+    select {
+        display: block;
+        height: 30px;
+        width: 339px;
+        border: 1px solid #afafaf;
+        opacity: .5;
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 0;
+        outline: none;
+    }
+    
+    .fundingRaisedInputs {
+        display: flex;
+    }
+    
+    .fundingRaised {
+        display: flex;
+        width: 274px;
+    }
+    
+    .fundingRaisedType {
+        display: flex;
+        width: 65px;
+        border-left: none;
+    }
+    
+    .authButton {
+        margin-top: 10px;
+    }
+    
+    #authButton {
+        background-image: linear-gradient(to right, #F85159 0%, #F88959 100%);
+        border: none;
+        color: #fff;
+        letter-spacing: 2px;
+        width: 125px;
+        height: 30px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: 0.3s;
+        border-radius: 4px;
+    }
+    
+    #authButton:hover {
+        opacity: 0.8;
+    }
+    
+    .accountFormPage {
+        color: #777777;
+        padding-top: 73px;
+        font-size: 15px;
+    }
+
+@media only screen and (max-width: 500px) {
+    .pageIconContainer img {
+        pointer-events: none;
+    }
+    
+    .authPageBg {
+        background-image: none;
+        background: #F8F8F8;
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        padding-top: 0;
+        margin-top: 0;
+        overflow-x: hidden;
+        background-attachment: fixed;
+        overflow-y: hidden;
+    }
+    
+    .centerContainer {
+        max-width: 1800px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    .scyreLogoAuth {
+        width: 470px;
+        padding-bottom: 30px;
+    }
+    
+    .pageIconContainer img {
+        width: 35px;
+        margin-top: 12px;
+    }
+    
+    form h1 {
+        font-size: 20px;
+        color: #6B6B6B;
+    }
+    
+    .connectWithOthers {
+        font-size: 13px;
+    }
+    .formContent {
+        width: 100%;
+        margin-top: -10px;
+    }
+    
+    .authLabelAndInput {
+        width: 100%;
+        padding-bottom: 8px;
+        display: block;
+    }
+    
+    .totalFundingRaisedAuth {
+        display: grid;
+    }
+    
+    .scyreLogoAuth {
+        display: inline-block;
+        pointer-events: none;
+    }
+    
+    .formContainerForAuth {
+        margin-top: 15px;
+    }
+    
+    .getStartedForm {
+        text-align: left;
+        height: 392px;
+    }
+    
+    .getStartedForm h2 {
+        color: #6B6B6B;
+        font-size: 20px;
+    }
+    
+    .connectWithOthers {
+        line-height: 20px;
+    }
+    
+    hr {
+        border: 0.5px solid #7E7E7E;
+        opacity: .25;
+    }
+    
+    .centerForm {
+        background: #fff;
+        margin: auto;
+        display: inline-block;
+        -webkit-box-shadow: 0px 0px 35px 1px rgba(0,0,0,0.15);
+        -moz-box-shadow: 0px 0px 35px 1px rgba(0,0,0,0.15);
+        box-shadow: 0px 0px 35px 1px rgba(0,0,0,0.15);
+        padding-left: 21px;
+        padding-right: 21px;
+        padding-top: 23.67px;
+        padding-bottom: 17px;
+        border-radius: 5px;
+        width: 330px;
+    }
+    
+    .formAuthContentPages {
+        width: 100%;
+    }
+    
+    form {
+        background: #fff;
+        margin: auto;
+        display: inline-block;
+        -webkit-box-shadow: 0px 0px 35px 1px rgba(0,0,0,0.15);
+        -moz-box-shadow: 0px 0px 35px 1px rgba(0,0,0,0.15);
+        box-shadow: 0px 0px 35px 1px rgba(0,0,0,0.15);
+        padding-left: 35.65px;
+        padding-right: 35.65px;
+        padding-top: 10px;
+        padding-bottom: 15px;
+        border-radius: 5px;
+        width: 330px;
+        z-index: 1;
+    }
+    
+    label {
+        display: flex;
+        font-size: 12px;
+        color: #818181;
+        float: left;
+        padding-bottom: 4px;
+    }
+    
+    .authLocation {
+        display: flex;
+        width: 100%;
+        font-size: 16px;
+        box-sizing: border-box;
+        outline: none;
+        z-index: 1;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    .authLocation:hover {
+        background: rgba(128,128,128,0.1);
+    }
+    
+    .headerAndParagraph {
+        text-align: left;
+        padding-left: 20px;
+    }
+    
+    .headerAndParagraph h3 {
+        font-size: 15px;
+        color: #6B6B6B;
+    }
+    
+    .headerAndParagraph p {
+        font-size: 13px;
+        color: #818181;
+        margin-top: -8px;
+    }
+    
+    input {
+        display: block;
+        height: 30px;
+        width: 100%;
+        border: 1px solid #afafaf;
+        opacity: .5;
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+        outline: none;
+        z-index: 1;
+        border-radius: 0;
+    }
+    
+    .autoCompleteInputAuthForm {
+        border-bottom: none;
+    }
+    
+    .AutoCompleteText {
+        position: absolute;
+        background: #fff;
+        border: 1px solid rgba(126,126,126,0.5);
+        border-top: none;
+        z-index: 5;
+        width: 258px;
+        max-height: 245px;
+        overflow-y: scroll;
+    }
+    
+    .AutoCompleteText ul {
+        list-style-type: none;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .AutoCompleteText ul::before {
+        content: "";
+    }
+    
+    .AutoCompleteText li {
+        padding: 10px 5px;
+        cursor: pointer;
+        color: #7E7E7E;
+        opacity: 0.8;
+    }
+    
+    .AutoCompleteText li:hover {
+        background: rgba(128,128,128,0.2);
+    }
+    
+    select {
+        display: block;
+        height: 30px;
+        width: 100%;
+        border: 1px solid #afafaf;
+        opacity: .5;
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 0;
+        outline: none;
+    }
+    
+    .fundingRaisedInputs {
+        display: flex;
+    }
+    
+    .fundingRaised {
+        display: flex;
+        width: 192px;
+    }
+    
+    .fundingRaisedType {
+        display: flex;
+        width: 65px;
+        border-left: none;
+    }
+    
+    .authButton {
+        margin-top: 10px;
+    }
+    
+    #authButton {
+        background-image: linear-gradient(to right, #F85159 0%, #F88959 100%);
+        border: none;
+        color: #fff;
+        letter-spacing: 2px;
+        width: 125px;
+        height: 30px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: 0.3s;
+        border-radius: 4px;
+    }
+    
+    #authButton:hover {
+        opacity: 0.8;
+    }
+    
+    .accountFormPage {
+        color: #777777;
+        padding-top: 73px;
+        font-size: 15px;
+    }
+}
